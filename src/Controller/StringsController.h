@@ -14,8 +14,12 @@ class StringsController
 {
 private:
 	string word;
+	int count;
 public:
 	StringsController();
+	void setWord(string);
+	string getWord();
+	int getSize();
 	void start();
 };
 
