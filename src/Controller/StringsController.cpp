@@ -28,15 +28,19 @@ string StringsController :: getWord()
 
 void StringsController :: start()
 {
-	cout << "In the SillyAppController\'s start method" << endl;
+	cout << "In the StringController\'s start method" << endl;
 	cout << "Type a word." << endl;
 	string tempWord;
 	string tempWord2;
 	cin >> tempWord;
-	cin >> tempWord2;
 	setWord(tempWord);
-	cout << getWord() << " is what you typed" << endl;
-	cout << tempWord.size() << " is the size of your word" << endl;
+	cout << getWord() << " is what you typed." << endl;
+	cout << tempWord.size() << " is the size of your word." << endl;
+	cout << tempWord[1] << " is the second spot in your word." << endl;
 	cout << tempWord.empty() << endl;
+	cin >> tempWord2;
+	setWord(tempWord2);
+	cout << tempWord2 << " is your new word.\n" << endl;
+	cout << tempWord2.compare(tempWord) << tempWord2 << " is like " << tempWord << endl;
 
 }

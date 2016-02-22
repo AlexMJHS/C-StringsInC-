@@ -12,7 +12,7 @@ using namespace std;
 int main()
 {
 	StringsController * baseController = new StringsController();
-		baseController->start();
+	baseController->start();
 
 	return 0;
 }
